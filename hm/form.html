@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>操作表单</title>
+		<style type="text/css">
+			#name{
+				width: 300px;
+				height: 30px;
+				line-height: 30px;
+				color: red;
+				border: 1px solid slateblue;
+				border-radius: 5px;
+				margin: 10px 0;
+				padding-left: 5px;
+			}
+		</style>
+		<script type="text/javascript" src="../js/my-js.js" ></script>
+	</head>
+	<body>
+		<div id="button"> 
+			<button id="get-value">获取输入值</button>
+			<button id="get-color">获取颜色值</button>
+		</div>
+		<div id="content">
+			<input type="text" id="name" /><br />
+			<label><input type="radio" name="animal" id="monkey" value="1" />猴子</label><br />
+			<label><input type="radio" name="animal" id="cat" value="2" />猫猴子</label><br />
+			<input type="date" value="2017-03-23" /><br />
+			<input type="datetime-local" value="2015-07-01T02:03:04" /><br />
+			<input type="color" value="#ff0000" id="c"/><br />
+			
+		</div>
+		<div>
+			<form id="test-form" onsubmit="return checkForm()">
+				<input type="text" name="test" id="con"/><br />
+				<input type="password" name="pass" id="pass" />
+				<input type="button" onclick="doSubmit()" value="Submit"/>
+			</form>
+		</div>
+	</body>
+</html>
